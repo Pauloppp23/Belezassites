@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumière Beauté - Produtos de Beleza Premium</title>
+    <meta name="description" content="Descubra nossa linha premium de produtos de beleza. Skincare, maquiagem e cuidados capilares de alta qualidade.">
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMTYiIGN5PSIxNiIgcj0iMTYiIGZpbGw9IiNGRkJEMzMiLz4KPGNpcmNsZSBjeD0iMTYiIGN5PSIxMiIgcj0iOCIgZmlsbD0iI0ZGQ0YxOCIvPgo8cGF0aCBkPSJNMTEgMjBDMTEgMTguNDE0IDEyLjQxNCAxNyAxNCAxN0MxNS41ODYgMTcgMTcgMTguNDE0IDE3IDIwQzE3IDIxLjU4NiAxNS41ODYgMjIgMTQgMjJDMTIuNDE0IDIyIDExIDIwLjU4NiAxMSAyMFoiIGZpbGw9IiNGRkZGRkYiLz4KPC9zdmc+" />
+    <link rel="stylesheet" href="site.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <div class="logo">
+                    <svg viewBox="0 0 32 32" width="40" height="40">
+                        <circle cx="16" cy="16" r="16" fill="#FFB233"/>
+                        <circle cx="16" cy="12" r="8" fill="#FFCF18"/>
+                        <path d="M11 20C11 18.414 12.414 17 14 17C15.586 17 17 18.414 17 20C17 21.586 15.586 22 14 22C12.414 22 11 20.586 11 20Z" fill="white"/>
+                    </svg>
+                    <span>Lumière Beauté</span>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Início</a></li>
+                <li><a href="#products" class="nav-link">Produtos</a></li>
+                <li><a href="#about" class="nav-link">Sobre</a></li>
+                <li><a href="#contact" class="nav-link">Contato</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="cart-btn" id="cartBtn">
+                    <svg viewBox="0 0 24 24" width="24" height="24">
+                        <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM17 18c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2zM2 2v2h1.8l3.5 7.6-1.3 2.3c-.1.2-.1.4-.1.6 0 1.1.9 2 2 2h12v-2H7.4l.5-1h11.1c.6 0 1.1-.5 1.1-1.1 0-.2 0-.4-.1-.5l-1.8-3.2h-9.6l-.6-1H20c.6 0 1.1-.5 1.1-1.1 0-.6-.5-1.1-1.1-1.1h-17z" fill="currentColor"/>
+                    </svg>
+                    <span class="cart-count">0</span>
+                </button>
+                <button class="menu-toggle" id="menuToggle">
+                    <svg viewBox="0 0 24 24" width="24" height="24" class="hamburger">
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Beleza que <span class="gradient-text">Ilumina</span></h1>
+                <p class="hero-subtitle">Descubra nossa coleção premium de skincare, maquiagem e cuidados capilares formulados com ingredientes naturais de alta qualidade.</p>
+                <div class="hero-buttons">
+                    <a href="#products" class="btn btn-primary">Ver Produtos</a>
+                    <a href="#about" class="btn btn-secondary">Saiba Mais</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="product-float">
+                    <div class="product-card floating">
+                        <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=400&h=500&fit=crop" alt="Sérum Hidratante" loading="lazy">
+                        <div class="product-overlay">
+                            <h3>Sérum Hidratante</h3>
+                            <span class="price">R$ 129,90</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nossos <span class="gradient-text">Produtos</span></h2>
+                <p class="section-subtitle">Seleção exclusiva com os melhores ingredientes naturais</p>
+            </div>
+            
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="skincare">Skincare</button>
+                <button class="filter-btn" data-filter="makeup">Maquiagem</button>
+                <button class="filter-btn" data-filter="hair">Cabelos</button>
+            </div>
+
+            <div class="products-grid" id="productsGrid">
+                <!-- Products will be loaded via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">Sobre a <span class="gradient-text">Lumière</span></h2>
+                    <p>Fundada com a missão de revolucionar o mercado de beleza, a Lumière Beauté combina ciência avançada com ingredientes naturais puros. Cada produto é meticulosamente formulado para entregar resultados visíveis sem comprometer a saúde da sua pele.</p>
+                    <div class="features-grid">
+                        <div class="feature">
+                            <div class="feature-icon">🌿</div>
+                            <h4>100% Natural</h4>
+                            <p>Ingredientes orgânicos certificados</p>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">🧪</div>
+                            <h4>Testado Dermatologicamente</h4>
+                            <p>Aprovado por especialistas</p>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">♻️</div>
+                            <h4>Embalagem Sustentável</h4>
+                            <p>100% reciclável e biodegradável</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&h=600&fit=crop" alt="Laboratório Lumière" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Entre em <span class="gradient-text">Contato</span></h2>
+                <p class="section-subtitle">Estamos aqui para ajudar você a encontrar o produto perfeito</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h4>Endereço</h4>
+                            <p>R. das Flores, 123<br>São Paulo, SP</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <h4>Telefone</h4>
+                            <p>(11) 99999-9999</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>contato@lumierbeauté.com</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Seu nome" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Seu email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" placeholder="Sua mensagem" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Modal -->
+    <div class="modal" id="cartModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>🛒 Seu Carrinho</h3>
+                <button class="modal-close" id="cartClose">
+                    <svg viewBox="0 0 24 24" width="24" height="24">
+                        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="cart-items" id="cartItems">
+                <p class="empty-cart">Seu carrinho está vazio</p>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Total: </span>
+                    <span id="cartTotal">R$ 0,00</span>
+                </div>
+                <button class="btn btn-primary" id="checkoutBtn">Finalizar Compra</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+
+    <script src="site.js"></script>
+</body>
+</html>
